@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 ApplyBuddy (Working Title)
 
-## Getting Started
+An AI-powered web assistant that helps job seekers tailor their CV and generate personalized cover letters for specific job postings.
 
-First, run the development server:
+Users upload their CV and paste a job description or URL. The app analyzes both using NLP and AI models, identifies missing keywords/skills, and provides optimization suggestions — including a tailored cover letter draft.
+
+---
+
+## 🚀 Live Demo
+
+Coming soon – deployed on [Netlify / Vercel / GitHub Pages]
+
+---
+
+## 🎯 Features
+
+- 📄 Upload or paste your CV
+- 🔍 Paste job description or URL
+- 🤖 AI-powered analysis using Hugging Face models
+- ✍️ Skill gap suggestions + tailored bullet points
+- 📝 Automatically generated cover letter draft
+- 📋 Copy-to-clipboard & download support
+- 📱 Responsive, clean UI
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, TailwindCSS
+- **AI Models:** Hugging Face Transformers (summarization, keyword extraction, etc.)
+- **APIs:** Hugging Face Inference API
+- **PDF Parsing:** `pdf-parse` or `pdf.js`
+- **Deployment:** [Netlify / Vercel]
+
+---
+
+## 📦 Getting Started
 
 ```bash
+# Clone the repo
+git clone https://github.com/yourusername/applybuddy.git
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
+src/<br />
+├── components/        # UI components<br />
+├── pages/             # Main views (Home, Results, etc.)<br />
+├── utils/             # Helper functions (parsing, AI calls)<br />
+├── assets/            # Static assets (logo, icons)<br />
+└── App.jsx
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧪 AI Model Integration (Planned)
 
-To learn more about Next.js, take a look at the following resources:
+- ✅ Job description summarization
+- ✅ Keyword & skill extraction
+- ✅ Resume/job alignment scoring
+- ✅ Cover letter generation (prompt-based)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧠 Future Improvements
 
-## Deploy on Vercel
+- Allow saving and reusing CVs
+- Export tailored CVs (PDF/DOCX)
+- Real-time job listing integration via public APIs
+- User accounts & cloud sync
+- Browser extension (auto-fetch job data)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👤 Author
+
+[Maciej Wiącek]<br />
+📧 maciejwiacek4@gmail.com
